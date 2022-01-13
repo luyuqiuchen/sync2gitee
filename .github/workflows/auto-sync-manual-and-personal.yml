@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: master
     
-name: Mirror GitHub Selected Repos to Gitee
+name: 同步自定义项目
 jobs:
   run:
     name: Sync-Gitee-Manual-and-Personal
@@ -23,4 +23,5 @@ jobs:
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
         static_list: 'gybe,jd_seckill'
-        # force_update: true
+        force_update: true
+        debug: true
