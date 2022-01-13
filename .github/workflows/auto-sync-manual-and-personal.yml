@@ -22,6 +22,5 @@ jobs:
         dst: gitee/luyuqiuchen
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
-        account_type: user
         static_list: 'gybe,jd_seckill'
-        force_update: true
+        # force_update: true
